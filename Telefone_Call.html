@@ -1,13 +1,102 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Позвонить менеджеру</title>
+    <title>Позвонить по бетону</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+        .phone-number {
+            font-size: 28px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin: 25px 0;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border: 2px dashed #3498db;
+        }
+        .call-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            color: white;
+            padding: 20px 40px;
+            font-size: 22px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 15px;
+            transition: all 0.3s;
+            margin: 15px 0;
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+        }
+        .call-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+            background: linear-gradient(135deg, #128C7E 0%, #0d6e5c 100%);
+        }
+        .whatsapp-btn {
+            display: inline-block;
+            background: #25D366;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        .info {
+            color: #7f8c8d;
+            margin-top: 25px;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+    </style>
 </head>
-<body style="text-align: center; padding-top: 50px;">
-    <h2>Нажмите кнопку ниже, чтобы позвонить</h2>
-    <a href="tel:+79287296662" style="font-size: 24px; padding: 20px; background: green; color: white; border-radius: 10px; text-decoration: none;">
-        📞 Позвонить: 8 (928) 729-66-62
-    </a>
+<body>
+    <div class="container">
+        <h1>📞 Позвонить менеджеру</h1>
+        <p>По вопросам бетона и строительства</p>
+        
+        <div class="phone-number">8 (928) 729-66-62</div>
+        
+        <a href="tel:+79287296662" class="call-btn">
+            НАЖМИ ДЛЯ ЗВОНКА
+        </a>
+        
+        <p class="info">
+            Нажмите кнопку выше<br>
+            Откроется приложение "Телефон"<br>
+            Просто нажмите вызов
+        </p>
+        
+        <!-- Дополнительные кнопки -->
+        <div style="margin-top: 30px; border-top: 1px solid #eee; padding-top: 20px;">
+            <p>Или напишите:</p>
+            <a href="https://wa.me/79287431820" class="whatsapp-btn" style="background: #25D366;">
+                💬 WhatsApp 1
+            </a>
+            <br>
+            <a href="https://wa.me/79289174024" class="whatsapp-btn" style="background: #128C7E; margin-top: 10px;">
+                💬 WhatsApp 2
+            </a>
+        </div>
+    </div>
 </body>
 </html>
